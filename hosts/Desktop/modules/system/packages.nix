@@ -93,14 +93,18 @@
 
   pkgs.gimp3-with-plugins
 
-## themes tools
+## themes tools gtk ,qt , icons and cursors
 
    pkgs.nwg-look
    pkgs.gtk-engine-murrine
    pkgs.gtk_engines
    pkgs.adw-gtk3
-
- ###cursors
+   pkgs.catppuccin-papirus-folders
+   pkgs.catppuccin-cursors
+   pkgs.catppuccin-kvantum
+   pkgs.rose-pine-icon-theme
+    pkgs.qogir-icon-theme
+    pkgs.dracula-icon-theme
    pkgs.bibata-cursors
 
 

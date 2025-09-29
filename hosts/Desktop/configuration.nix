@@ -9,13 +9,11 @@
       /etc/nixos/hardware-configuration.nix
       ./modules/core/services.nix
       ./modules/core/firewall.nix
-      ./modules/core/polkit.nix
+      ./modules/core/security.nix
       ./modules/core/sound.nix
       ./modules/system/upgrade-store.nix
       ./modules/core/amd.nix
-      ./modules/core/gtklock.nix
       ./modules/home-manager/ssh.nix
-      ./modules/core/gpg.nix
       ./modules/core/locales.nix
       ./modules/system/packages.nix
       ./modules/core/bootloader.nix
@@ -25,9 +23,9 @@
       ./modules/system/hyprland.nix   
       ./modules/home-manager/zsh.nix
       ./modules/system/flatpak.nix
-      ./modules/core/greetd.nix
       ./modules/core/fonts.nix   
-    
+     ./modules/core/nh.nix   
+
     ];
 
 

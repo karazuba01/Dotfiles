@@ -8,20 +8,9 @@
 
 #Login Manager 
 
- # services.displayManager.cosmic-greeter.enable = true;
- #services.displayManager.gdm.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
 
-  security = {
-    pam.services.swaylock = {
-      text = ''
-        auth include login
-      '';
-    };
-#    pam.services.gtklock = {};
-    pam.services.login.enableGnomeKeyring = true;
-  };
 
-  services.gnome.gnome-keyring.enable = true;
 
   programs = {
     hyprland = {
