@@ -20,6 +20,7 @@
       ./modules/system/podman.nix
       ./modules/system/steam.nix
       ./modules/system/hyprland.nix   
+      ./modules/system/cosmic.nix   
       ./modules/home-manager/zsh.nix
       ./modules/system/flatpak.nix
       ./modules/core/fonts.nix   
