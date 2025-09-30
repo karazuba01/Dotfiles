@@ -11,7 +11,6 @@
       ./modules/core/firewall.nix
       ./modules/core/security.nix
       ./modules/core/sound.nix
-      ./modules/system/upgrade-store.nix
       ./modules/core/amd.nix
       ./modules/home-manager/ssh.nix
       ./modules/core/locales.nix
@@ -30,10 +29,7 @@
 
 
 
-    
-  environment.sessionVariables = {
-    NH_FLAKE = "/home/infexius/Nix";
-  };
+
 
 
 

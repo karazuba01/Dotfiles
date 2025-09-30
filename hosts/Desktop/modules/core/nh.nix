@@ -8,11 +8,20 @@
       enable = true;
       extraArgs = "--keep-since 7d --keep 5";
     };
-    flake = "/home/${username}/Nix";
+   # flake = "/home/${username}/Nix";
   };
 
   environment.systemPackages = with pkgs; [
     nix-output-monitor
     nvd
   ];
+
+
+    
+  environment.sessionVariables = {
+    NH_FLAKE = "/home/infexius/Nix";
+  };
+
+
+
 }
