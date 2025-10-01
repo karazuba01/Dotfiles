@@ -82,4 +82,36 @@ security.pam.services.gtklock = {
 
 
 
+
+# Clam AV
+
+ #services.clamav.daemon.enable = true;
+ #services.clamav.updater.enable = true;
+
+# OpenSnitch services
+
+#services.opensnitch.enable = true;
+
+ # Security Sudo-Rust & Doas
+
+#security.sudo-rs.enable=true;
+security.doas.enable = true;
+security.sudo.enable = false;
+security.doas.extraRules = [{
+  users = ["infexius"];
+  # Optional, retains environment variables while running commands 
+  # e.g. retains your NIX_PATH when applying your config
+  keepEnv = true; 
+  persist = true;  # Optional, don't ask for the password for some time, after a successfully authentication
+}];
+
+
+# Fail2ban Block SSH
+
+ services.fail2ban.enable = true;
+
+# openssh
+
+  # services.openssh.enable = true;
+
 }

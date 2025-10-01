@@ -76,7 +76,10 @@
    yazi
    ghostty
  
+ # Some Security stuff
 
+  #pkgs.clamav
+  #pkgs.opensnitch-ui
    
    # Code Editors
 

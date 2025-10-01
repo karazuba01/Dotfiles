@@ -21,8 +21,8 @@ programs.steam.gamescopeSession.enable = true;
     pkgs.heroic-unwrapped
      pkgs.lutris
      pkgs.wowup-cf
-     inputs.nix-gaming.packages.${pkgs.system}.wine-tkg # installs a package
-
+     inputs.nix-gaming.packages.${pkgs.system}.wine-tkg 
+     inputs.nix-gaming.packages.${pkgs.system}.wine-tkg-ntsync 
 
   ];
 
