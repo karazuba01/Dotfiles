@@ -12,7 +12,7 @@
       ./modules/core/security.nix
       ./modules/core/sound.nix
       ./modules/core/amd.nix
-      ./modules/home-manager/ssh.nix
+      ./modules/core/ssh.nix
       ./modules/core/locales.nix
       ./modules/system/packages.nix
       ./modules/core/bootloader.nix

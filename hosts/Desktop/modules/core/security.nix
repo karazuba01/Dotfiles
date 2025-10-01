@@ -106,12 +106,6 @@ security.doas.extraRules = [{
 }];
 
 
-# Fail2ban Block SSH
 
- services.fail2ban.enable = true;
-
-# openssh
-
-  # services.openssh.enable = true;
 
 }
