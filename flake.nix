@@ -6,8 +6,8 @@
 
 
 
-    nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable"; 
+    nixpkgs-stable.url = "github:nixos/nixpkgs/release-25.05";  
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
       
@@ -18,9 +18,9 @@
 };
 
 
-  outputs = { self, nixpkgs, nixpkgs-unstable , chaotic, home-manager, nix-flatpak,  ... }@inputs: {
+  outputs = { self, nixpkgs,  chaotic, home-manager, nix-flatpak,  ... }@inputs: {
 
-  nixosConfigurations.Desktop= nixpkgs-unstable.lib.nixosSystem {
+  nixosConfigurations.Desktop= nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
        specialArgs = {inherit self  inputs;};
     modules = [ 

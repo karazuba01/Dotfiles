@@ -53,6 +53,7 @@
    pkgs.p7zip
    pkgs.zip
    pkgs.unzip
+   pkgs.gpu-viewer
 
    ### Proggrammming 
 
@@ -70,8 +71,12 @@
   pkgs.net-tools
 
    ##Terminals
-   kitty
+   
+ 
    yazi
+   ghostty
+ 
+
    
    # Code Editors
 
