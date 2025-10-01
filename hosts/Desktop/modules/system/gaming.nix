@@ -1,5 +1,5 @@
 
-{pkgs ,config, ... }:
+{pkgs ,config, inputs, ... }:
 
 {
   
@@ -19,10 +19,9 @@ programs.steam.gamescopeSession.enable = true;
     mangohud
     goverlay
     pkgs.heroic-unwrapped
-   # pkgs.bottles-unwrapped
-    #pkgs.lutris-unwrapped
      pkgs.lutris
      pkgs.wowup-cf
+     inputs.nix-gaming.packages.${pkgs.system}.wine-tkg # installs a package
 
 
   ];

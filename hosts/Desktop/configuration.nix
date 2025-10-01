@@ -18,7 +18,7 @@
       ./modules/core/bootloader.nix
       ./modules/system/vm.nix
       ./modules/system/podman.nix
-      ./modules/system/steam.nix
+      ./modules/system/gaming.nix
       ./modules/system/hyprland.nix   
       ./modules/home-manager/zsh.nix
       ./modules/system/flatpak.nix

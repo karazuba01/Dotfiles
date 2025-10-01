@@ -10,6 +10,9 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/release-25.05";  
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    nix-gaming.url = "github:fufexan/nix-gaming"; 
+
+
       
         home-manager = {
        url = "github:nix-community/home-manager";
@@ -18,7 +21,7 @@
 };
 
 
-  outputs = { self, nixpkgs,  chaotic, home-manager, nix-flatpak,  ... }@inputs: {
+  outputs = { self, nixpkgs, nix-gaming, chaotic, home-manager, nix-flatpak,  ... }@inputs: {
 
   nixosConfigurations.Desktop= nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
